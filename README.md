@@ -48,28 +48,33 @@
 ```
 core-and-edge/
 ├── README.md              ← 本說明文件
+├── ARCHITECTURE.md        ← 架構設計與決策紀錄
 ├── ivy-core/              ← Core Agent (Ivy) 的 Workspace 檔案
 │   ├── IDENTITY.md        ← 🏛️ 身份卡
 │   ├── SOUL.md            ← 靈魂 / 行為憲法（人格定位）
+│   ├── AGENTS.md          ← 操作規範（職責與權限）
 │   ├── USER.md            ← 老大的資訊
-│   └── MEMORY.md          ← 長期記憶（待使用者啟用後補充）
+│   ├── MEMORY.md          ← 長期記憶（待使用者啟用後補充）
+│   └── BOOT.md            ← 開機儀式（啟動時自動執行）
 └── rose-edge/             ← Edge Agent (Rose) 的 Workspace 檔案
     ├── IDENTITY.md        ← 🌹 身份卡
     ├── SOUL.md            ← 靈魂 / 行為憲法（人格定位）
+    ├── AGENTS.md          ← 操作規範（職責與權限）
     ├── USER.md            ← 老大的資訊
-    └── MEMORY.md          ← 長期記憶（待使用者啟用後補充）
+    ├── MEMORY.md          ← 長期記憶（待使用者啟用後補充）
+    └── BOOT.md            ← 開機儀式（啟動時自動執行）
 ```
 
 ## 部署方式
 
-將 `ivy-core/` 內的檔案複製到 Ivy 的 OpenClaw workspace 路徑：
+將 `ivy-core/` 內的檔案複製到 Ivy (oc-1) 的 OpenClaw workspace 路徑：
 ```
-~/.openclaw/workspace-ivy/
+/opt/openclaw/realvco-oc-1/workspace/
 ```
 
-將 `rose-edge/` 內的檔案複製到 Rose 的 OpenClaw workspace 路徑：
+將 `rose-edge/` 內的檔案複製到 Rose (oc-2) 的 OpenClaw workspace 路徑：
 ```
-~/.openclaw/workspace-rose/
+/opt/openclaw/realvco-oc-2/workspace/
 ```
 
 ## 使用者啟用後的自訂項目
